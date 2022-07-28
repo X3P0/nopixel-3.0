@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CWeaponModelInfo__InitDataList>
+    <InitDatas>
+        <!-- Flamethrower -->
+        <Item>
+            <modelName>w_mg_flamethrower</modelName>
+            <txdName>w_mg_flamethrower</txdName>
+            <ptfxAssetName>weap_nd_weapons</ptfxAssetName>
+            <lodDist value="500"/>
+        </Item>
+        
+    </InitDatas>
+</CWeaponModelInfo__InitDataList>

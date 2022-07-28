@@ -1,0 +1,49 @@
+<timecycle_modifier_data version="1.000000">
+	<modifier name="xee_cinema" numMods="45" userFlags="0">
+	<light_natural_amb_down_col_r>0.010 0.000</light_natural_amb_down_col_r>
+    <light_natural_amb_down_col_g>0.010 0.000</light_natural_amb_down_col_g>
+    <light_natural_amb_down_col_b>0.010 0.000</light_natural_amb_down_col_b>
+    <light_natural_amb_up_col_r>0.010 0.000</light_natural_amb_up_col_r>
+    <light_natural_amb_up_col_g>0.010 0.000</light_natural_amb_up_col_g>
+    <light_natural_amb_up_col_b>0.010 0.000</light_natural_amb_up_col_b>
+    <light_artificial_int_down_col_r>0.010 0.000</light_artificial_int_down_col_r>
+    <light_artificial_int_down_col_g>0.010 0.000</light_artificial_int_down_col_g>
+    <light_artificial_int_down_col_b>0.010 0.000</light_artificial_int_down_col_b>
+    <light_artificial_int_down_intensity>0.010 0.000</light_artificial_int_down_intensity>
+    <light_artificial_int_up_col_r>0.010 0.000</light_artificial_int_up_col_r>
+    <light_artificial_int_up_col_g>0.010 0.000</light_artificial_int_up_col_g>
+    <light_artificial_int_up_col_b>0.010 0.000</light_artificial_int_up_col_b>
+    <light_artificial_int_up_intensity>0.010 0.000</light_artificial_int_up_intensity>
+    <ssao_inten>0.000 0.000</ssao_inten>
+    <light_ped_rim_mult>0.000 0.000</light_ped_rim_mult>
+    <postfx_bright_pass_thresh_width>0.000 0.000</postfx_bright_pass_thresh_width>
+    <postfx_bright_pass_thresh>0.000 0.000</postfx_bright_pass_thresh>
+    <postfx_intensity_bloom>0.000 0.000</postfx_intensity_bloom>
+    <lens_artefacts_intensity>0.050 0.000</lens_artefacts_intensity>
+    <reflection_tweak_interior_amb>16.000 0.000</reflection_tweak_interior_amb>
+    <reflection_tweak_directional>0.000 0.000</reflection_tweak_directional>
+    <temperature>20.000 0.000</temperature>
+    <natural_ambient_multiplier>0.200 0.000</natural_ambient_multiplier>
+	<reflection_interior_range>75.000 0.000</reflection_interior_range>
+    <reflection_tweak_emissive>12.000 0.000</reflection_tweak_emissive>
+    <artificial_int_ambient_multiplier>0.200 0.000</artificial_int_ambient_multiplier>
+	<light_directional_amb_intensity>0.000 0.000</light_directional_amb_intensity>
+    <light_natural_amb_down_intensity>0.000 0.000</light_natural_amb_down_intensity>
+    <light_natural_amb_up_intensity>0.000 0.000</light_natural_amb_up_intensity>
+	<ped_light_col_r>0.000 0.000</ped_light_col_r>
+    <ped_light_col_g>0.000 0.000</ped_light_col_g>
+    <ped_light_col_b>0.000 0.000</ped_light_col_b>
+    <ped_light_mult>0.000 0.000</ped_light_mult>
+	<light_amb_occ_mult_ped>0.000 0.000</light_amb_occ_mult_ped>
+	<fog_start>73.000 73.000</fog_start>
+	<postfx_exposure>0.000 0.000</postfx_exposure>
+    <postfx_exposure_min>0.000 0.000</postfx_exposure_min>
+    <postfx_exposure_max>0.000 0.000</postfx_exposure_max>
+    <postfx_bright_pass_thresh_width>0.250 0.000</postfx_bright_pass_thresh_width>
+    <postfx_bright_pass_thresh>0.250 0.000</postfx_bright_pass_thresh>
+    <postfx_intensity_bloom>0.100 0.000</postfx_intensity_bloom>
+	<natural_ambient_multiplier>0.000 0.000</natural_ambient_multiplier>
+	<light_amb_down_wrap>0.400 0.000</light_amb_down_wrap>
+    <light_natural_push>0.010 0.000</light_natural_push>
+	</modifier>
+</timecycle_modifier_data>

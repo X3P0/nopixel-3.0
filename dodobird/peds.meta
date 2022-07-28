@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CPedModelInfo__InitDataList>
+  <InitDatas>
+<!--PED ITEM HERE-->
+    <Item>
+      <Name>a_c_dodo</Name>
+      <PropsName>null</PropsName>
+      <ClipDictionaryName>CREATURES@HEN@MOVE</ClipDictionaryName>
+      <BlendShapeFileName>null</BlendShapeFileName>
+      <ExpressionSetName/>
+      <ExpressionDictionaryName>A_C_Birds</ExpressionDictionaryName>
+      <ExpressionName>A_C_Birds</ExpressionName>
+      <Pedtype>Animal</Pedtype>
+      <MovementClipSet>FLIGHTLESSBIRD</MovementClipSet>
+      <MovementClipSets/>
+      <StrafeClipSet>MOVE_PED_STRAFING</StrafeClipSet>
+      <MovementToStrafeClipSet>MOVE_PED_TO_STRAFE</MovementToStrafeClipSet>
+      <InjuredStrafeClipSet>MOVE_STRAFE_INJURED</InjuredStrafeClipSet>
+      <FullBodyDamageClipSet>DAM_KO</FullBodyDamageClipSet>
+      <AdditiveDamageClipSet>DAM_AD</AdditiveDamageClipSet>
+      <DefaultGestureClipSet>ANIM_GROUP_GESTURE_M_GENERIC</DefaultGestureClipSet>
+      <FacialClipsetGroupName>CLIP_SET_ID_INVALID</FacialClipsetGroupName>
+      <DefaultVisemeClipSet>ANIM_GROUP_VISEMES_M_LO</DefaultVisemeClipSet>
+      <SidestepClipSet>CLIP_SET_ID_INVALID</SidestepClipSet>
+      <PoseMatcherName>a_a_hen</PoseMatcherName>
+      <PoseMatcherProneName>null</PoseMatcherProneName>
+      <GetupSetHash>null</GetupSetHash>
+      <CreatureMetadataName>null</CreatureMetadataName>
+      <DecisionMakerName>Hen</DecisionMakerName>
+      <MotionTaskDataSetName>FLIGHTLESS_BIRD</MotionTaskDataSetName>
+      <DefaultTaskDataSetName>Animal</DefaultTaskDataSetName>
+      <PedCapsuleName>Hen</PedCapsuleName>
+      <PedLayoutName/>
+      <PedComponentSetName>Hen</PedComponentSetName>
+      <PedComponentClothName/>
+      <PedIKSettingsName>NO_IK</PedIKSettingsName>
+      <TaskDataName>Animal</TaskDataName>
+      <IsStreamedGfx value="false"/>
+      <AmbulanceShouldRespondTo value="false"/>
+      <CanRideBikeWithNoHelmet value="false"/>
+      <CanSpawnInCar value="true"/>
+      <IsHeadBlendPed value="false"/>
+      <bOnlyBulkyItemVariations value="false"/>
+      <RelationshipGroup>Hen</RelationshipGroup>
+      <NavCapabilitiesName>SIMPLE</NavCapabilitiesName>
+      <PerceptionInfo>DEFAULT_PERCEPTION</PerceptionInfo>
+      <DefaultBrawlingStyle>BS_HEN</DefaultBrawlingStyle>
+      <DefaultUnarmedWeapon>WEAPON_HEN</DefaultUnarmedWeapon>
+      <Personality>Hen</Personality>
+      <CombatInfo>SCARED_ANIMAL</CombatInfo>
+      <VfxInfoName>VFXPEDINFO_BIRD_GENERIC</VfxInfoName>
+      <AmbientClipsForFlee>FLEE</AmbientClipsForFlee>
+      <Radio1>RADIO_GENRE_COUNTRY</Radio1>
+      <Radio2>RADIO_GENRE_COUNTRY</Radio2>
+      <FUpOffset value="0.00000000"/>
+      <RUpOffset value="0.00000000"/>
+      <FFrontOffset value="0.00000000"/>
+      <RFrontOffset value="0.14700000"/>
+      <MinActivationImpulse value="20.00000000"/>
+      <Stubble value="0.00000000"/>
+      <HDDist value="3.00000000"/>
+      <TargetingThreatModifier value="0.05000000"/>
+      <KilledPerceptionRangeModifer value="3.00000000"/>
+      <Sexiness/>
+      <Age value="0"/>
+      <MaxPassengersInCar value="0"/>
+      <ExternallyDrivenDOFs/>
+      <PedVoiceGroup>VOICE_PLY_CR</PedVoiceGroup>
+      <AnimalAudioObject>ANIMAL_PARAMS_HEN</AnimalAudioObject>
+      <AbilityType>SAT_NONE</AbilityType>
+      <ThermalBehaviour>TB_COLD</ThermalBehaviour>
+      <SuperlodType>SLOD_NULL</SuperlodType>
+      <ScenarioPopStreamingSlot>SCENARIO_POP_STREAMING_SMALL</ScenarioPopStreamingSlot>
+      <DefaultSpawningPreference>DSP_NORMAL</DefaultSpawningPreference>
+      <DefaultRemoveRangeMultiplier value="1.00000000"/>
+      <AllowCloseSpawning value="false"/>
+    </Item>
+  </InitDatas>
+</CPedModelInfo__InitDataList>

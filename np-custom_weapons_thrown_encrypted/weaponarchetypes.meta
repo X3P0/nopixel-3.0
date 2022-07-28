@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CWeaponModelInfo__InitDataList>
+	<InitDatas>
+
+		<!-- WEAPON_BRICK -->
+		<Item>
+			<modelName>W_EX_Brick</modelName>
+			<txdName>W_EX_Brick</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		
+		<!-- WEAPON_SHOE -->
+		<Item>
+			<modelName>W_EX_Shoe</modelName>
+			<txdName>W_EX_Shoe</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		
+		<Item>
+			<modelName>W_EX_Cash</modelName>
+			<txdName>BKR_DLC_INT_Ware04_TXD</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		
+		<Item>
+			<modelName>W_EX_Book</modelName>
+			<txdName>W_EX_Book</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		
+	</InitDatas>
+</CWeaponModelInfo__InitDataList>

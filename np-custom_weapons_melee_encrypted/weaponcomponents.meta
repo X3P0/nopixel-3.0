@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CWeaponComponentInfoBlob>
+  <Data>
+    <Item type="CWeaponSwapData">
+      <Name>SWAP_SHIV</Name>
+      <PedHolsterClipId>holster</PedHolsterClipId>
+      <PedHolsterCrouchClipId>Holster_Crouch</PedHolsterCrouchClipId>
+      <PedHolsterCoverClipId>low_holster</PedHolsterCoverClipId>
+      <PedHolsterDiscardClipId>Discard</PedHolsterDiscardClipId>
+      <PedHolsterCrouchDiscardClipId>discard_crouch</PedHolsterCrouchDiscardClipId>
+      <PedHolsterWeaponClipId>w_holster</PedHolsterWeaponClipId>
+      <PedUnHolsterClipId>unholster</PedUnHolsterClipId>
+      <PedUnHolsterCrouchClipId>Unholster_Crouch</PedUnHolsterCrouchClipId>
+      <PedUnHolsterLeftCoverClipId>low_l_unholster</PedUnHolsterLeftCoverClipId>
+      <PedUnHolsterRightCoverClipId>low_r_unholster</PedUnHolsterRightCoverClipId>
+      <PedUnHolsterWeaponClipId>w_unholster</PedUnHolsterWeaponClipId>
+      <AnimPlaybackRate value="1.0" />
+    </Item>
+	</Data>
+  <Infos>
+  <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_GAVEL</Name>
+      <Model>w_me_gavel</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+	  <TintIndexOverride value="2"/>
+    </Item>
+	<Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_KATANA_02</Name>
+      <Model>w_me_katana_02</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+	  <TintIndexOverride value="2"/>
+    </Item>
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_KATANA_03</Name>
+      <Model>w_me_katana_03</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+	  <TintIndexOverride value="2"/>
+    </Item>
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_KATANA_04</Name>
+      <Model>w_me_katana_04</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+	  <TintIndexOverride value="2"/>
+    </Item>
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_KATANA_05</Name>
+      <Model>w_me_katana_05</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+	  <TintIndexOverride value="2"/>
+    </Item>
+	<Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_TALON</Name>
+      <Model>w_me_talonsword</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+	  <TintIndexOverride value="2"/>
+    </Item>
+	<Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_BAT_BARBED</Name>
+      <Model>w_me_baseball_bat_barbed</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+	  <TintIndexOverride value="2"/>
+    </Item>
+	<Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_BAT_BOLTS</Name>
+      <Model>w_me_baseball_bat_bolts</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+	  <TintIndexOverride value="2"/>
+    </Item>
+	<Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_BAT_BROKEN</Name>
+      <Model>w_me_baseball_bat_broken</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+	  <TintIndexOverride value="2"/>
+    </Item>
+	<Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_BAT_CHAIN</Name>
+      <Model>w_me_baseball_bat_chain</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+	  <TintIndexOverride value="2"/>
+    </Item>
+	<Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_BAT_METAL</Name>
+      <Model>w_me_baseball_bat_metal</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+	  <TintIndexOverride value="2"/>
+    </Item>
+	<Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_BAT_SAW</Name>
+      <Model>w_me_baseball_bat_saw</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+	  <TintIndexOverride value="2"/>
+    </Item>
+	<Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_BAT_WOOD</Name>
+      <Model>w_me_baseball_bat_wood</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+	  <TintIndexOverride value="2"/>
+    </Item>
+	<Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_KARAMBIT</Name>
+      <Model>w_me_karambit</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+    </Item>
+  </Infos>
+  <InfoBlobName>DLC - Melee</InfoBlobName>
+</CWeaponComponentInfoBlob>

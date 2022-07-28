@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="message">
+
+    </div>
+    <div id="cards">
+
+    </div>
+    <div id="container">
+        <div class="instructions">
+            <h2>Dealer Instructions</h2>
+            <ul class="help-list">
+                <li>
+                    <span class="command">/bj</span>
+                    Open table - players can now place bets
+                </li>
+                <li>
+                    <span class="command">/bj deal</span>
+                    Start game and deal cards - player's bets are locked and cards are dealt
+                </li>
+                <li>
+                    <span class="command">/bj hit [Player Number]</span>
+                    Deal player a card. "/bj hit d" or "/bj hit dealer" for dealer.<br>
+                    <!-- Ask each player one at a time what they want to do. "/bj hit 1" will hit player labeled 1. <br>
+                        "/bj hit dealer" hits dealer, and only reveals face down card on first hit.  -->
+                    </li>
+                <li>
+                    <span class="command">/bj double [Player Number]</span>
+                    Doubles player's bet, but only gets one hit. If not enough chips left, will "double" for remaining chips.
+                </li>
+                <li>
+                    <span class="command">/bj end</span>
+                    This will end the current game, and clear all card HUDs. Will not calculate winning/losing if ended early.
+                </li>
+                <!-- <li>
+                    <span class="command">/bj rules [0 | 1]</span>
+                    0: Blackjack just counts as 21 - no instant win <br>
+                    1: Blackjack is instant win or game end on dealer blackjack (default)
+                </li> -->
+                <li>
+                    <span class="command">/bj chips [0 | 1]</span>
+                    0: Manually handle cash each hand<br>
+                    1: Only allow bets for players who have purchased chips. Auto pays/takes chips. See "Player Commands" below. (default)<br>
+                </li>
+                <li>
+                    <span class="command">/bj decksize [number of decks]</span>
+                    Change # of decks. Use higher # for more players. (Default 4).
+                </li>
+                <li>
+                    <span class="command">/bj shuffle</span>
+                    Shuffle current deck. Game will shuffle when 33% deck remains.
+                </li>
+                <li>
+                    <span class="command">/bj maxbet [number]</span>
+                    Set max allowed bet. Defaults to 1000 when table is opened.
+                </li>
+                <li>
+                    <span class="command">Player Commands</span>
+                    <li><strong>/pokerchips buy [dealer ID] [amount]</strong> to buy chips</li>
+                    <li><strong>/pokerchips cash [dealer ID] [amount]</strong> to redeem chips</li>
+                    <li><strong>/pokerchips accept</strong> (Dealer) to accept a request. This will send/receive cash for chips</li>
+                    <li><strong>/pokerchips</strong> will reveal balances. Dealer will see negative values for players that currently have remaining chips.</li>
+                    <li><strong>/bj leave</strong> for players to clear their cards and get out of any 'invisible' games if they exist</li>
+                    <!-- Aces are 1 or 11. <br>
+                    Dealer hits soft 17. Hand will turn blue once dealer no longer needs to hit. If hand is still white font, that means dealer needs to hit again (report any scenarios that you think this is calculated incorrectly so it can be investigated). -->
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

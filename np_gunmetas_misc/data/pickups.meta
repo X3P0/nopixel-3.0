@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<CPickupDataManager>
+  <pickupData>
+	<Item type="CPickupData">
+      <Name>PICKUP_WEAPON_FLAMETHROWER</Name>
+      <Model>w_mg_flamethrower</Model>
+      <GenerationRange value="80.000000" />
+      <RegenerationTime value="60.000000" />
+      <CollectionRadiusFirstPerson value="2.000000" />
+	  <CollectionRadius value="1.000000" />
+      <Scale value="1.000000" />
+      <LoopingAudioRef>NULL_SOUND</LoopingAudioRef>
+      <GlowRed value="1.000000" />
+      <GlowGreen value="0.225000" />
+      <GlowBlue value="0.000000" />
+      <GlowIntensity value="0.500000" />
+      <DarkGlowIntensity value="0.500000" />
+      <MPGlowIntensity value="0.500000" />
+      <MPDarkGlowIntensity value="3.000000" />
+      <GlowRange value="2.000000" />
+      <AttachmentBone>BONETAG_ROOT</AttachmentBone>
+      <AttachmentOffset x="0.000000" y="0.000000" z="0.000000" />
+      <AttachmentRotation x="0.000000" y="0.000000" z="0.000000" />
+      <PickupFlags>CollectableOnFoot ManualPickUp</PickupFlags>
+      <OnFootPickupActions>
+        <Item>ACTION_GROUP_ONFOOT</Item>
+        <Item>ACTION_AUDIO_RPG</Item>
+      </OnFootPickupActions>
+      <InCarPickupActions />
+      <OnShotPickupActions />
+      <Rewards>
+        <Item>REWARD_WEAPON_FLAMETHROWER</Item>
+        <Item>REWARD_AMMO_FLAMETHROWER</Item>
+        <Item>REWARD_STAT_WEAPON</Item>
+      </Rewards>
+    </Item>
+   </pickupData>
+  <actionData/>
+  <rewardData>
+	<Item type="CPickupRewardWeapon">
+      <Name>REWARD_WEAPON_FLAMETHROWER</Name>
+      <WeaponRef>WEAPON_FLAMETHROWER</WeaponRef>
+      <Equip value="false" />
+    </Item>
+  </rewardData>
+</CPickupDataManager>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PedDecorationCollection>
+    <bRequiredForSync value="true" />
+    <presets>
+        <Item>
+            <uvPos x="0.705000" y="0.545000" />
+            <scale x="0.205000" y="0.205000" />
+            <rotation value="0.000000" />
+            <nameHash>nikeztattoos_tat_000_M</nameHash>
+            <txdHash>nikez_tat_seaside_big_spear</txdHash>
+            <txtHash>nikez_tat_seaside_big_spear</txtHash>
+            <zone>ZONE_TORSO</zone>
+            <type>TYPE_TATTOO</type>
+            <faction>FM</faction>
+            <garment>All</garment>
+            <gender>GENDER_MALE</gender>
+            <award />
+            <awardLevel />
+        </Item>
+        <Item>
+            <uvPos x="0.705000" y="0.545000" />
+            <scale x="0.205000" y="0.205000" />
+            <rotation value="0.000000" />
+            <nameHash>nikeztattoos_tat_001_M</nameHash>
+            <txdHash>nikez_tat_seaside_color</txdHash>
+            <txtHash>nikez_tat_seaside_color</txtHash>
+            <zone>ZONE_TORSO</zone>
+            <type>TYPE_TATTOO</type>
+            <faction>FM</faction>
+            <garment>All</garment>
+            <gender>GENDER_MALE</gender>
+            <award />
+            <awardLevel />
+        </Item>
+        <Item>
+            <uvPos x="0.211000" y="0.565000" />
+            <scale x="0.185000" y="0.185000" />
+            <rotation value="0.000000" />
+            <nameHash>nikeztattoos_tat_002_M</nameHash>
+            <txdHash>nikez_tat_seaside_gray</txdHash>
+            <txtHash>nikez_tat_seaside_gray</txtHash>
+            <zone>ZONE_TORSO</zone>
+            <type>TYPE_TATTOO</type>
+            <faction>FM</faction>
+            <garment>All</garment>
+            <gender>GENDER_MALE</gender>
+            <award />
+            <awardLevel />
+        </Item>
+        <Item>
+            <uvPos x="0.211000" y="0.565000" />
+            <scale x="0.185000" y="0.185000" />
+            <rotation value="0.000000" />
+            <nameHash>nikeztattoos_tat_003_M</nameHash>
+            <txdHash>nikez_tat_seaside_gray_waves</txdHash>
+            <txtHash>nikez_tat_seaside_gray_waves</txtHash>
+            <zone>ZONE_TORSO</zone>
+            <type>TYPE_TATTOO</type>
+            <faction>FM</faction>
+            <garment>All</garment>
+            <gender>GENDER_MALE</gender>
+            <award />
+            <awardLevel />
+        </Item>
+        <Item>
+            <uvPos x="0.5" y="0.6" />
+            <scale x="0.185000" y="0.185000" />
+            <rotation value="0.000000" />
+            <nameHash>nikeztattoos_tat_004_M</nameHash>
+            <txdHash>nikez_tat_seaside_gray_waves</txdHash>
+            <txtHash>nikez_tat_seaside_gray_waves</txtHash>
+            <zone>ZONE_RIGHT_ARM</zone>
+            <type>TYPE_TATTOO</type>
+            <faction>FM</faction>
+            <garment>All</garment>
+            <gender>GENDER_MALE</gender>
+            <award />
+            <awardLevel />
+        </Item>
+        <Item>
+            <uvPos x="0.32" y="0.61000" />
+            <scale x="0.23" y="0.23" />
+            <rotation value="0.000000" />
+            <nameHash>nikeztattoos_tat_005_M</nameHash>
+            <txdHash>nikez_tat_seaside_gray_waves</txdHash>
+            <txtHash>nikez_tat_seaside_gray_waves</txtHash>
+            <zone>ZONE_LEFT_LEG</zone>
+            <type>TYPE_TATTOO</type>
+            <faction>FM</faction>
+            <garment>All</garment>
+            <gender>GENDER_MALE</gender>
+            <award />
+            <awardLevel />
+        </Item>
+        <Item>
+            <uvPos x="0.751000" y="0.38000" />
+            <scale x="0.15" y="0.15" />
+            <rotation value="2.500000" />
+            <nameHash>nikeztattoos_tat_006_M</nameHash>
+            <txdHash>nikez_tat_seaside_big_spear</txdHash>
+            <txtHash>nikez_tat_seaside_big_spear</txtHash>
+            <zone>ZONE_RIGHT_LEG</zone>
+            <type>TYPE_TATTOO</type>
+            <faction>FM</faction>
+            <garment>All</garment>
+            <gender>GENDER_MALE</gender>
+            <award />
+            <awardLevel />
+        </Item>
+        <Item>
+            <uvPos x="0.151000" y="0.71000" />
+            <scale x="0.1000" y="0.10000" />
+            <rotation value="0.000000" />
+            <nameHash>nikeztattoos_tat_000_F</nameHash>
+            <txdHash>nikez_tat_seaside_big_spear</txdHash>
+            <txtHash>nikez_tat_seaside_big_spear</txtHash>
+            <zone>ZONE_TORSO</zone>
+            <type>TYPE_TATTOO</type>
+            <faction>FM</faction>
+            <garment>All</garment>
+            <gender>GENDER_FEMALE</gender>
+            <award />
+            <awardLevel />
+        </Item>
+        <Item>
+            <uvPos x="0.151000" y="0.71000" />
+            <scale x="0.1000" y="0.10000" />
+            <rotation value="0.000000" />
+            <nameHash>nikeztattoos_tat_001_F</nameHash>
+            <txdHash>nikez_tat_seaside_color</txdHash>
+            <txtHash>nikez_tat_seaside_color</txtHash>
+            <zone>ZONE_TORSO</zone>
+            <type>TYPE_TATTOO</type>
+            <faction>FM</faction>
+            <garment>All</garment>
+            <gender>GENDER_FEMALE</gender>
+            <award />
+            <awardLevel />
+        </Item>
+        <Item>
+            <uvPos x="0.32  1000" y="0.66000" />
+            <scale x="0.21" y="0.21" />
+            <rotation value="0.000000" />
+            <nameHash>nikeztattoos_tat_002_F</nameHash>
+            <txdHash>nikez_tat_seaside_gray_waves</txdHash>
+            <txtHash>nikez_tat_seaside_gray_waves</txtHash>
+            <zone>ZONE_LEFT_LEG</zone>
+            <type>TYPE_TATTOO</type>
+            <faction>FM</faction>
+            <garment>All</garment>
+            <gender>GENDER_FEMALE</gender>
+            <award />
+            <awardLevel />
+        </Item>
+        <Item>
+            <uvPos x="0.751000" y="0.38000" />
+            <scale x="0.15" y="0.15" />
+            <rotation value="2.500000" />
+            <nameHash>nikeztattoos_tat_003_F</nameHash>
+            <txdHash>nikez_tat_seaside_big_spear</txdHash>
+            <txtHash>nikez_tat_seaside_big_spear</txtHash>
+            <zone>ZONE_RIGHT_LEG</zone>
+            <type>TYPE_TATTOO</type>
+            <faction>FM</faction>
+            <garment>All</garment>
+            <gender>GENDER_FEMALE</gender>
+            <award />
+            <awardLevel />
+        </Item>
+        <Item>
+            <uvPos x="0.315" y="0.4" />
+            <scale x="0.185000" y="0.185000" />
+            <rotation value="0.000000" />
+            <nameHash>nikeztattoos_tat_004_F</nameHash>
+            <txdHash>nikez_tat_seaside_gray_waves</txdHash>
+            <txtHash>nikez_tat_seaside_gray_waves</txtHash>
+            <zone>ZONE_RIGHT_ARM</zone>
+            <type>TYPE_TATTOO</type>
+            <faction>FM</faction>
+            <garment>All</garment>
+            <gender>GENDER_FEMALE</gender>
+            <award />
+            <awardLevel />
+        </Item>
+        <!-- Nick Simone -->
+        <Item>
+            <uvPos x="0.681000" y="0.3458000" />
+            <scale x="0.225000" y="0.2265000" />
+            <rotation value="-100.000000" />
+            <nameHash>NIKEZ_TAT_HUGINN_L</nameHash>
+            <txdHash>NIKEZ_TAT_HUGINN_L</txdHash>
+            <txtHash>NIKEZ_TAT_HUGINN_L</txtHash>
+            <zone>ZONE_TORSO</zone>
+            <type>TYPE_TATTOO</type>
+            <faction>FM</faction>
+            <garment>All</garment>
+            <gender>GENDER_MALE</gender>
+            <award />
+            <awardLevel />
+        </Item>
+        <Item>
+            <uvPos x="0.711000" y="0.5458000" />
+            <scale x="0.155000" y="0.155000" />
+            <rotation value="35.000000" />
+            <nameHash>NIKEZ_TAT_HUGINN_R</nameHash>
+            <txdHash>NIKEZ_TAT_HUGINN_R</txdHash>
+            <txtHash>NIKEZ_TAT_HUGINN_R</txtHash>
+            <zone>ZONE_TORSO</zone>
+            <type>TYPE_TATTOO</type>
+            <faction>FM</faction>
+            <garment>All</garment>
+            <gender>GENDER_MALE</gender>
+            <award />
+            <awardLevel />
+        </Item>
+        <Item>
+            <uvPos x="0.225000" y="0.515000" />
+            <scale x="0.2300" y="0.3100" />
+            <rotation value="0.000000" />
+            <nameHash>NIKEZ_TAT_ATHENA</nameHash>
+            <txdHash>NIKEZ_TAT_ATHENA</txdHash>
+            <txtHash>NIKEZ_TAT_ATHENA</txtHash>
+            <zone>ZONE_TORSO</zone>
+            <type>TYPE_TATTOO</type>
+            <faction>FM</faction>
+            <garment>All</garment>
+            <gender>GENDER_MALE</gender>
+            <award />
+            <awardLevel />
+        </Item>
+        <Item>
+            <uvPos x="0.9205000" y="0.258000" />
+            <scale x="0.185000" y="0.185000" />
+            <rotation value="-35.000000" />
+            <nameHash>NIKEZ_TAT_ODEN</nameHash>
+            <txdHash>NIKEZ_TAT_ODEN</txdHash>
+            <txtHash>NIKEZ_TAT_ODEN</txtHash>
+            <zone>ZONE_TORSO</zone>
+            <type>TYPE_TATTOO</type>
+            <faction>FM</faction>
+            <garment>All</garment>
+            <gender>GENDER_MALE</gender>
+            <award />
+            <awardLevel />
+        </Item>
+        <Item>
+            <uvPos x="0.498000" y="0.750000" />
+            <scale x="0.150000" y="0.150000" />
+            <rotation value="0.000000" />
+            <nameHash>NIKEZ_TAT_5STARLEMONS</nameHash>
+            <txdHash>NIKEZ_TAT_5STARLEMONS</txdHash>
+            <txtHash>NIKEZ_TAT_5STARLEMONS</txtHash>
+            <zone>ZONE_HEAD</zone>
+            <type>TYPE_TATTOO</type>
+            <faction>FM</faction>
+            <garment>All</garment>
+            <gender>GENDER_DONTCARE</gender>
+            <award />
+            <awardLevel />
+        </Item>
+    </presets>
+    <nameHash>nikeztattoos_overlays</nameHash>
+    <medalLocations content="vector2_array">
+    0.140000	0.070000	
+    0.370000	0.070000	
+    0.600000	0.070000	
+    0.835000	0.070000	
+    0.140000	0.150000	
+    0.370000	0.150000	
+    0.600000	0.150000	
+    0.835000	0.150000	
+    0.140000	0.230000	
+    0.370000	0.230000	
+    0.600000	0.230000	
+    0.835000	0.230000	
+    0.100000	0.700000	
+    0.300000	0.700000	
+    0.500000	0.700000	
+    0.700000	0.700000
+    </medalLocations>
+    <medalScale x="0.240000" y="0.100000" />
+</PedDecorationCollection>

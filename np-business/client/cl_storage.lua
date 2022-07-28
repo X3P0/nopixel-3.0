@@ -1,0 +1,811 @@
+-- 
+-- 
+-- KEEPING OLD CODE IN CASE IM A FUCKING STOOPID FACE AND BROKE SOMETHING HAHA :D
+-- 
+-- 
+
+
+-- function OpenSelfStorageMenu(data)
+--   local size = data.size or 600
+--   local business = data.business
+--   local MenuData = {
+--     {
+--       title = "Open Storage Container",
+--       description = "Storage Unit #" .. data.unitId .. " (capacity: " .. size .. ")",
+--       action = "np-business:storage:showAccessCodeField",
+--       key = { id = data.id, size = size, business = business }
+--     },
+--   }
+
+--   local hasPermission = HasPermission(data.business, "craft_access")
+
+--   -- If person has craft access let's let them change password
+--   if hasPermission then
+--     MenuData[#MenuData+1] = {
+--       title = "Change Password",
+--       description = "Change this storages container access code.",
+--       action = "np-business:storage:showUpdateAccessCodeField",
+--       key = { id = data.id, business = data.business }
+--     }
+--   end
+
+--   exports["np-ui"]:showContextMenu(MenuData)
+-- end
+
+-- RegisterUICallback("np-business:storage:ui:getAccessLogs", function(data, cb)
+--   local logs = RPC.execute("np-business:storage:getStorages", data.cid)
+--   local details = {}
+--   for k, id in pairs(logs) do
+--     for k2, unit in pairs(storageUnits) do
+--       if unit[4].data.id == id then
+--         details[#details + 1] = unit[4].data
+--       end
+--     end
+--   end
+--   cb({ data = details, meta = { ok = true, message = "" } })
+-- end)
+
+-- RegisterUICallback("np-business:storage:showAccessCodeField", function(data, cb)
+--   cb({ data = {}, meta = { ok = true, message = "" }})
+--   exports["np-ui"]:openApplication("textbox", {
+--     callbackUrl = "np-business:storage:enteredPassword",
+--     key = { id = data.key.id, size = data.key.size, business = data.key.business },
+--     items = {
+--       { label = "Password", name = "password", type = "password" },
+--     },
+--     show = true,
+--   })
+--   Wait(250)
+--   exports["np-ui"]:SetUIFocus(true, true)
+-- end)
+
+-- RegisterUICallback("np-business:storage:enteredPassword", function(data, cb)
+--   local password = data.values.password
+--   local storageId = data.key.id
+--   local storageSize = data.key.size
+--   local business = data.key.business
+
+--   local hasAccess, accessMessage = RPC.execute("np-business:storage:hasAccess", storageId, business, password)
+
+--   if not hasAccess then
+--     return TriggerEvent("DoLongHudText", accessMessage, 2)
+--   end
+
+--   -- Actually open the storage container now
+--   TriggerEvent("server-inventory-open", "1", business .. "-" .. storageId .. "-" .. storageSize)
+
+--   exports["np-ui"]:closeApplication("textbox")
+--   return cb({ data = {}, meta = { ok = true, message = "done" } })
+-- end)
+
+-- RegisterUICallback("np-business:storage:showUpdateAccessCodeField", function(data, cb)
+--   cb({ data = {}, meta = { ok = true, message = "" }})
+--   exports["np-ui"]:openApplication("textbox", {
+--     callbackUrl = "np-business:storage:updatePassword",
+--     key = { id = data.key.id },
+--     items = {
+--       { label = "Master State ID", name = "cid", icon = "user-check" },
+--       { name = "password", type = "password" },
+--     },
+--     show = true,
+--   })
+--   Wait(250)
+--   exports["np-ui"]:SetUIFocus(true, true)
+-- end)
+
+-- RegisterUICallback("np-business:storage:updatePassword", function(data, cb)
+--   local password = data.values.password
+--   local storageId = data.key.id
+--   local masterStateId = data.values.cid
+
+--   if not masterStateId then
+--     return TriggerEvent("DoLongHudText", "Master State ID is required", 2)
+--   end
+
+--   local passwordUpdated, message = RPC.execute("np-business:storage:updatePassword", storageId, password, masterStateId)
+
+--   if not passwordUpdated then
+--     return TriggerEvent("DoLongHudText", message, 2)
+--   end
+
+--   TriggerEvent("DoLongHudText", "Password successfully updated for " .. storageId, 1)
+--   exports["np-ui"]:closeApplication("textbox")
+--   return cb({ data = {}, meta = { ok = true, message = "done" } })
+-- end)
+
+-- local currentUnitId = 0
+-- local function getUnitId()
+--   currentUnitId = currentUnitId + 1
+--   return currentUnitId
+-- end
+
+-- storageUnits = {
+--   {
+--     vector3(-73.25, -1197.58, 27.67), 2.2, 5, {
+--       heading=0,
+--       minZ=26.67,
+--       maxZ=30.67,
+--       data = {
+--         id = "aa_boulevard1",
+--         business = "paynless",
+--         size = 600,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-67.8, -1199.76, 27.73), 2.2, 5, {
+--       heading=315,
+--       minZ=26.67,
+--       maxZ=30.67,
+--       data = {
+--         id = "aa_boulevard2",
+--         business = "paynless",
+--         size = 600,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-62.14, -1205.51, 28.29), 2.2, 5, {
+--       heading=312,
+--       minZ=26.67,
+--       maxZ=30.67,
+--       data = {
+--         id = "aa_boulevard3",
+--         business = "paynless",
+--         size = 900,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-56.76, -1210.8, 28.64), 2.2, 5.0, {
+--       heading=315,
+--       minZ=26.67,
+--       maxZ=30.67,
+--       data = {
+--         id = "aa_boulevard4",
+--         business = "paynless",
+--         size = 1200,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-53.74, -1216.65, 28.7), 2.2, 5, {
+--       heading=270,
+--       minZ=26.67,
+--       maxZ=30.67,
+--       data = {
+--         id = "aa_boulevard5",
+--         business = "paynless",
+--         size = 1200,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-78.53, -1203.43, 27.62), 2.2, 5, {
+--       heading=0,
+--       minZ=26.67,
+--       maxZ=30.67,
+--       data = {
+--         id = "aa_boulevard6",
+--         business = "paynless",
+--         size = 600,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-70.51, -1205.91, 27.88), 2.2, 5, {
+--       heading=315,
+--       minZ=26.67,
+--       maxZ=30.67,
+--       data = {
+--         id = "aa_boulevard7",
+--         business = "paynless",
+--         size = 600,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-65.3, -1211.12, 28.29), 2.2, 5, {
+--       heading=315,
+--       minZ=26.67,
+--       maxZ=30.67,
+--       data = {
+--         id = "aa_boulevard8",
+--         business = "paynless",
+--         size = 900,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-66.18, -1227.21, 28.85), 2.2, 5, {
+--       heading=52,
+--       minZ=26.67,
+--       maxZ=30.67,
+--       data = {
+--         id = "aa_boulevard9",
+--         business = "paynless",
+--         size = 900,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-71.84, -1234.27, 29.02), 2.2, 5, {
+--       heading=51,
+--       minZ=26.67,
+--       maxZ=30.67,
+--       data = {
+--         id = "aa_boulevard10",
+--         business = "paynless",
+--         size = 900,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-43.23, -1235.9, 29.34), 2.2, 5, {
+--       heading=270,
+--       minZ=26.67,
+--       maxZ=30.67,
+--       data = {
+--         id = "aa_boulevard11",
+--         business = "paynless",
+--         size = 1200,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-43.04, -1242.23, 29.34), 2.5, 5, {
+--       heading=270,
+--       minZ=26.67,
+--       maxZ=30.67,
+--       data = {
+--         id = "aa_boulevard12",
+--         business = "paynless",
+--         size = 900,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-43.23, -1252.7, 29.28), 2.5, 5, {
+--       heading=270,
+--       minZ=26.67,
+--       maxZ=30.67,
+--       data = {
+--         id = "aa_boulevard13",
+--         business = "paynless",
+--         size = 600,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-57.23, -1228.45, 28.76), 2.5, 5, {
+--       heading=47,
+--       minZ=26.67,
+--       maxZ=30.67,
+--       data = {
+--         id = "aa_boulevard14",
+--         business = "paynless",
+--         size = 1200,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-61.33, -1232.87, 28.87), 2.5, 5, {
+--       heading=47,
+--       minZ=26.67,
+--       maxZ=30.67,
+--       data = {
+--         id = "aa_boulevard15",
+--         business = "paynless",
+--         size = 1200,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-66.72, -1238.76, 29.01), 2.5, 5, {
+--       heading=47,
+--       minZ=26.67,
+--       maxZ=30.67,
+--       data = {
+--         id = "aa_boulevard16",
+--         business = "paynless",
+--         size = 600,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-73.71, -1242.1, 29.08), 2.5, 5, {
+--       heading=0,
+--       minZ=26.67,
+--       maxZ=30.67,
+--       data = {
+--         id = "aa_boulevard17",
+--         business = "paynless",
+--         size = 600,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-2203.08, 4244.61, 47.45), 1.4, 2.4, {
+--       heading=38,
+--       minZ=46.23,
+--       maxZ=50.23,
+--       data = {
+--         id = "northchumash1",
+--         business = "paynless",
+--         size = 600,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-2205.65, 4242.82, 47.5), 1.4, 2.4, {
+--       heading=38,
+--       minZ=46.23,
+--       maxZ=50.23,
+--       data = {
+--         id = "northchumash2",
+--         business = "paynless",
+--         size = 600,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-2208.05, 4240.93, 47.43), 1.4, 2.4, {
+--       heading=38,
+--       minZ=46.23,
+--       maxZ=50.23,
+--       data = {
+--         id = "northchumash3",
+--         business = "paynless",
+--         size = 600,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-2209.56, 4237.85, 47.45), 1.4, 2.4, {
+--       heading=38,
+--       minZ=46.23,
+--       maxZ=50.23,
+--       data = {
+--         id = "northchumash4",
+--         business = "paynless",
+--         size = 900,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-2211.81, 4235.74, 47.36), 1.4, 2.4, {
+--       heading=38,
+--       minZ=46.23,
+--       maxZ=50.23,
+--       data = {
+--         id = "northchumash5",
+--         business = "paynless",
+--         size = 900,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-2214.44, 4233.91, 47.18), 1.4, 2.4, {
+--       heading=38,
+--       minZ=46.23,
+--       maxZ=50.23,
+--       data = {
+--         id = "northchumash6",
+--         business = "paynless",
+--         size = 900,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-2215.84, 4230.85, 47.09), 1.4, 2.4, {
+--       heading=38,
+--       minZ=46.23,
+--       maxZ=50.23,
+--       data = {
+--         id = "northchumash7",
+--         business = "paynless",
+--         size = 1200,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-2218.38, 4228.85, 46.94), 1.4, 2.4, {
+--       heading=38,
+--       minZ=46.23,
+--       maxZ=50.23,
+--       data = {
+--         id = "northchumash8",
+--         business = "paynless",
+--         size = 1200,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-2220.87, 4227.14, 46.9), 1.4, 2.4, {
+--       heading=38,
+--       minZ=46.23,
+--       maxZ=50.23,
+--       data = {
+--         id = "northchumash9",
+--         business = "paynless",
+--         size = 1200,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-1306.95, -1263.16, 4.54), 2.3, 3.2, {
+--       heading=20,
+--       minZ=2.69,
+--       maxZ=6.69,
+--       data = {
+--         id = "vespucci_vitus1",
+--         business = "paynless",
+--         size = 600,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-1310.92, -1264.55, 4.56), 2.3, 3.2, {
+--       heading=20,
+--       minZ=2.69,
+--       maxZ=6.69,
+--       data = {
+--         id = "vespucci_vitus2",
+--         business = "paynless",
+--         size = 900,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-1315.09, -1266.17, 4.58), 2.3, 3.2, {
+--       heading=20,
+--       minZ=2.69,
+--       maxZ=6.69,
+--       data = {
+--         id = "vespucci_vitus3",
+--         business = "paynless",
+--         size = 1200,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(963.65, -1031.01, 40.98), 4.5, 2.2, {
+--       heading=0,
+--       minZ=39.78,
+--       maxZ=43.78,
+--       data = {
+--         id = "supply_street1",
+--         business = "paynless",
+--         size = 600,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(963.65, -1025.5, 41.05), 4.5, 2.2, {
+--       heading=0,
+--       minZ=39.78,
+--       maxZ=43.78,
+--       data = {
+--         id = "supply_street2",
+--         business = "paynless",
+--         size = 900,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(963.65, -1019.86, 40.91), 4.5, 2.2, {
+--       heading=0,
+--       minZ=39.78,
+--       maxZ=43.78,
+--       data = {
+--         id = "supply_street3",
+--         business = "paynless",
+--         size = 1200,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(963.56, -1014.2, 40.96), 4.5, 2.2, {
+--       heading=0,
+--       minZ=39.78,
+--       maxZ=43.78,
+--       data = {
+--         id = "supply_street4",
+--         business = "paynless",
+--         size = 1200,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-2214.02, 3486.99, 30.17), 2.4, 2.8, {
+--       heading=0,
+--       minZ=29.17,
+--       maxZ=32.37,
+--       data = {
+--         id = "zancudo1",
+--         business = "paynless",
+--         size = 600,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-2221.15, 3486.99, 30.17), 2.4, 2.8, {
+--       heading=0,
+--       minZ=29.17,
+--       maxZ=32.37,
+--       data = {
+--         id = "zancudo2",
+--         business = "paynless",
+--         size = 900,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-2229.92, 3480.87, 30.29), 2.4, 2.8, {
+--       heading=0,
+--       minZ=29.29,
+--       maxZ=32.29,
+--       data = {
+--         id = "zancudo3",
+--         business = "paynless",
+--         size = 1200,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-1607.06, -829.68, 10.01), 2.2, 5, {
+--       heading=320,
+--       minZ=9.01,
+--       maxZ=13.01,
+--       data = {
+--         id = "magellan1",
+--         business = "paynless",
+--         size = 600,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-1611.5, -825.75, 10.01), 2.2, 5, {
+--       heading=320,
+--       minZ=9.01,
+--       maxZ=13.01,
+--       data = {
+--         id = "magellan2",
+--         business = "paynless",
+--         size = 600,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-1615.92, -821.83, 10.01), 2.2, 5, {
+--       heading=320,
+--       minZ=9.01,
+--       maxZ=13.01,
+--       data = {
+--         id = "magellan3",
+--         business = "paynless",
+--         size = 900,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-1620.43, -818.05, 10.01), 2.2, 5, {
+--       heading=320,
+--       minZ=9.01,
+--       maxZ=13.01,
+--       data = {
+--         id = "magellan4",
+--         business = "paynless",
+--         size = 900,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-1624.96, -814.22, 10.01), 2.2, 5, {
+--       heading=320,
+--       minZ=9.01,
+--       maxZ=13.01,
+--       data = {
+--         id = "magellan5",
+--         business = "paynless",
+--         size = 1200,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+
+--     -- roosters
+--   {
+--     vector3(-137.02, 314.79, 98.47), 1.2, 1.8, {
+--       heading=0,
+--       minZ=97.57,
+--       maxZ=99.97,
+--       data = {
+--         id = "rr_1",
+--         business = "rr_hotel",
+--         size = 600,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-148.09, 314.52, 98.47), 1.2, 1.8, {
+--       heading=0,
+--       minZ=97.57,
+--       maxZ=99.97,
+--       data = {
+--         id = "rr_2",
+--         business = "rr_hotel",
+--         size = 600,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-137.0, 320.37, 98.47), 1.2, 1.8, {
+--       heading=0,
+--       minZ=97.57,
+--       maxZ=99.97,
+--       data = {
+--         id = "rr_3",
+--         business = "rr_hotel",
+--         size = 600,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-148.04, 320.31, 98.47), 1.2, 1.8, {
+--       heading=0,
+--       minZ=97.57,
+--       maxZ=99.97,
+--       data = {
+--         id = "rr_4",
+--         business = "rr_hotel",
+--         size = 600,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-136.98, 325.97, 98.47), 1.2, 1.8, {
+--       heading=0,
+--       minZ=97.57,
+--       maxZ=99.97,
+--       data = {
+--         id = "rr_5",
+--         business = "rr_hotel",
+--         size = 900,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-148.06, 326.02, 98.47), 1.2, 1.8, {
+--       heading=0,
+--       minZ=97.57,
+--       maxZ=99.97,
+--       data = {
+--         id = "rr_6",
+--         business = "rr_hotel",
+--         size = 900,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-136.99, 331.65, 98.47), 1.2, 1.8, {
+--       heading=0,
+--       minZ=97.57,
+--       maxZ=99.97,
+--       data = {
+--         id = "rr_7",
+--         business = "rr_hotel",
+--         size = 900,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-148.12, 331.66, 98.47), 1.2, 1.8, {
+--       heading=0,
+--       minZ=97.57,
+--       maxZ=99.97,
+--       data = {
+--         id = "rr_8",
+--         business = "rr_hotel",
+--         size = 900,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-132.96, 336.5, 98.47), 1.2, 1.8, {
+--       heading=0,
+--       minZ=97.57,
+--       maxZ=99.97,
+--       data = {
+--         id = "rr_9",
+--         business = "rr_hotel",
+--         size = 1200,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   },
+--   {
+--     vector3(-152.09, 336.25, 98.47), 1.2, 1.8, {
+--       heading=0,
+--       minZ=97.57,
+--       maxZ=99.97,
+--       data = {
+--         id = "rr_10",
+--         business = "rr_hotel",
+--         size = 1200,
+--         unitId = getUnitId(),
+--       }
+--     }
+--   }
+-- };
+
+-- for k, v in pairs(CASINO_HOTEL_CONFIG) do
+--   storageUnits[#storageUnits + 1] = {
+--     vector3(v.coords.x, v.coords.y, v.coords.z), 2.0, 2.0, {
+--       heading = 330,
+--       minZ = 19.8,
+--       maxZ = 22.0,
+--       data = {
+--         id = "cas_" .. tostring(k),
+--         business = "casino_hotel",
+--         size = v.size == "small" and 600 or (v.size == "medium" and 900 or 1200),
+--         unitId = getUnitId(),
+--       }
+--     }
+--   }
+-- end
+
+
+-- Citizen.CreateThread(function()
+--   for k, unit in ipairs(storageUnits) do
+--     exports["np-polyzone"]:AddBoxZone("secure_storage_unit", unit[1], unit[2], unit[3], unit[4])
+--   end
+-- end)

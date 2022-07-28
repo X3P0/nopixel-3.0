@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="js/script.js" type="text/javascript"></script>
+        <title>NoPixel Fiber DEBUG</title>
+    </head>
+    <body>
+        <div id="channel">
+            <label>Channel: <input id="channel-id" type="text", value="voice:demo"></label>
+            <span id="clientId">Client ID: N/A | Online: false</span>
+            <br><br>
+            <button id="channel-join">Join Channel</button>
+            <button id="channel-leave">Leave Channel</button>
+            <button id="voice-join">Join Voice Channel</button>
+            <button id="voice-leave">Leave Voice Channel</button>
+        </div>
+        <br>
+        <div id="phone">
+            <label>Local Number: <input id="phoneNumber" type="text" value="4567539518"></label>
+            <label>Target Number: <input id="targetPhoneNumber" type="text"></label>
+            <br><br>
+            <button id="phone-setNumber">Set Local Number</button>
+            <button id="phone-makeCall">Make Call</button>
+            <button id="phone-endCall">End Call</button>
+        </div>
+        <br>
+        <div id="radio">
+            <label>Radio Frequency: <input id="radioFrequency" type="text" value="105.6"></label>
+            <br><br>
+            <button id="radio-connect">Connect to Frequency</button>
+            <button id="radio-disconnect">Disconnect from Frequency</button>
+        </div>
+        <br>
+        <div id="publish">
+            <label>Event: <input id="publish-event" type="text"></label>
+            <label>Target: <input id="publish-target" type="text"></label>
+            <br><br>
+            <label>Payload:</label>
+            <br>
+            <textarea id="publish-payload" cols=90 rows=5></textarea>
+            <br><br>
+            <button id="publish-button">Publish</button>
+        </div>
+        <label>Outgoing / Incoming Messages</label><br>
+        <textarea id="message-outgoing" cols=90 rows=20></textarea>
+        <textarea id="message-incoming" cols=90 rows=20></textarea>
+
+        <script>
+            const IS_BROWSER = true;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,156 @@
+<html>
+
+<head>
+  <!-- Need to include jQuery! -->
+  <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.0/howler.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.0/howler.spatial.min.js"
+    type="text/javascript"></script>
+  <script>
+    const audioPlayers = [];
+    const loopedSounds = new Map();
+    // Listen for NUI Messages.
+    window.addEventListener("message", function (event) {
+      switch (event.data.transactionType) {
+        case "playSound":
+          var soundSrc = event.data.transactionRemote ? "" : "./sounds/" + event.data.transactionFile + ".ogg";
+          var vol = event.data.transactionVolume;
+
+          audioPlayers.forEach((player, idx) => {
+            //console.log("sudokuing " + idx);
+            if (!player.playing()) {
+              player.pause();
+              audioPlayers.splice(idx, 1);
+            }
+          });
+
+          let audioPlayer;
+
+          //3D Audio
+          if (event.data.transactionPosition !== undefined) {
+            //console.log("3D audio")
+            const pos = event.data.transactionPosition;
+            const ref = event.data.transactionRefDistance; //How far should the sound play at max volume.
+            const rolloff = event.data.transactionFallOff; //How fast should the sound degrade.
+            const maxDist = event.data.transactionMaxDistance;
+            audioPlayer = new Howl({
+              src: [soundSrc],
+              format: ["ogg"],
+              volume: vol,
+              preload: true,
+              autoplay: true,
+            });
+            audioPlayer.pannerAttr({
+                maxDistance: maxDist,
+                refDistance: ref,
+                rolloffFactor: rolloff,
+                panningModel: "HRTF",
+                distanceModel: "exponential",
+                coneInnerAngle: 360,
+                coneOuterAngle: 360,
+                coneOuterGain: 0,
+            })
+            audioPlayer.pos(pos[0], pos[1], pos[2]);
+            audioPlayer.once("end", () => {
+              $.post(
+                "https://interactSound/StopPlaying",
+                JSON.stringify({ audioId: audioId, is3d: true })
+              );
+            });
+          }else {
+            audioPlayer = new Howl({
+              src: [soundSrc],
+              format: ["ogg"],
+              volume: vol,
+              preload: true,
+              autoplay: true
+            });
+            audioPlayer.once("end", () => {
+              //console.log("Stopping: " + audioId)
+              $.post(
+                "https://interactSound/StopPlaying",
+                JSON.stringify({ audioId: audioId })
+              );
+            });
+          }
+
+          //debug
+          // console.log(
+          //   "playing: " +
+          //   event.data.transactionFile +
+          //   ", " +
+          //   event.data.transactionRemote
+          // );
+          const audioId = audioPlayers.push(audioPlayer)
+          audioPlayer.once("loaderror", (soundId, message) => {
+            console.log(soundId + ": " + message);
+            $.post(
+              "https://interactSound/StopPlaying",
+              JSON.stringify({ audioId: audioId })
+            );
+          });
+          $.post(
+            "https://interactSound/StartedPlaying",
+            JSON.stringify({ audioId: audioId })
+          );
+          break;
+        case "playLooped": {
+          if (loopedSounds.has(event.data.transactionFile)) return;
+
+          var vol = event.data.transactionVolume;
+          var soundSrc = event.data.transactionRemote ? "" : "./sounds/" + event.data.transactionFile + ".ogg";
+
+          const player = new Howl({
+            src: [soundSrc],
+            format: ["ogg"],
+            volume: vol,
+            loop: true,
+            autoplay: true,
+          });
+
+          loopedSounds.set(event.data.transactionFile, player)
+          break;
+        }
+        case "stopLooped": {
+          if (!loopedSounds.has(event.data.transactionFile)) return;
+
+          const player = loopedSounds.get(event.data.transactionFile)
+
+          player.loop = false;
+          player.pause();
+
+          loopedSounds.delete(event.data.transactionFile)
+
+          break;
+        }
+
+        case "updatePosition": {
+          var ori = event.data.transactionOrientation;
+          var lis = event.data.transactionListener;
+          Howler.pos(lis[0], lis[1], lis[2]);
+          Howler.orientation(ori[0], ori[1], 0, ori[0], ori[1], 1);
+          break;
+        }
+
+        case "stopPlaying": {
+          //console.log(event.data.transactionId);
+          let audioPlayer = audioPlayers[event.data.transactionId];
+          if (!audioPlayer) {
+            audioPlayer.pause();
+            audioPlayers.splice(event.data.transactionId, 1)
+          }
+          break;
+        }
+      }
+    });
+    function sleep(milliseconds) {
+      const date = Date.now();
+      let currentDate = null;
+      do {
+        currentDate = Date.now();
+      } while (currentDate - date < milliseconds);
+    }
+  </script>
+</head>
+
+</html>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CWeaponModelInfo__InitDataList>
+	<InitDatas>
+		
+	<!-- ### SWITCHBLADE ### -->	
+    
+	<Item>
+      <modelName>w_me_shiv</modelName>
+      <txdName>w_me_shiv</txdName>
+      <ptfxAssetName>null</ptfxAssetName>
+      <lodDist value="50"/>
+    </Item>
+	
+	<Item>
+			<modelName>w_me_gavel</modelName>
+			<txdName>np_town_hall_details</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>	
+	
+	<!-- ### KATANAS ### -->
+	
+		<Item>
+			<modelName>w_me_katana_lr</modelName>
+			<txdName>w_me_katana_lr</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>w_me_katana_02</modelName>
+			<txdName>w_me_katana_02</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>w_me_katana_03</modelName>
+			<txdName>w_me_katana_03</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>w_me_katana_04</modelName>
+			<txdName>w_me_katana_04</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>w_me_katana_05</modelName>
+			<txdName>w_me_katana_05</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>w_me_talonsword</modelName>
+			<txdName>w_me_talonsword</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+	
+	<!-- ### BATS ### -->
+		<Item>
+			<modelName>W_ME_Baseball_Bat_Wood</modelName>
+			<txdName>W_ME_Baseball_Bat_Collection1</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>W_ME_Baseball_Bat_Saw</modelName>
+			<txdName>W_ME_Baseball_Bat_Collection2</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>W_ME_Baseball_Bat_Metal</modelName>
+			<txdName>W_ME_Baseball_Bat_Collection1</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>W_ME_Baseball_Bat_Chain</modelName>
+			<txdName>W_ME_Baseball_Bat_Collection2</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>W_ME_Baseball_Bat_Broken</modelName>
+			<txdName>W_ME_Baseball_Bat_Collection2</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>W_ME_Baseball_Bat_Bolts</modelName>
+			<txdName>W_ME_Baseball_Bat_Collection1</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>W_ME_Baseball_Bat_Barbed</modelName>
+			<txdName>W_ME_Baseball_Bat_Collection1</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+	
+	</InitDatas>
+</CWeaponModelInfo__InitDataList>

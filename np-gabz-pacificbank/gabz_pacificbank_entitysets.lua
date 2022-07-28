@@ -1,0 +1,25 @@
+Citizen.CreateThread(function()
+
+    RequestIpl("gabz_sm_pb_milo")
+    interiorID = GetInteriorAtCoords(260.012, 220.733, 108.646)      
+    if IsValidInterior(interiorID) then         
+            EnableInteriorProp(interiorID, "room01_entrance")
+            EnableInteriorProp(interiorID, "room02_mainhall")  
+            EnableInteriorProp(interiorID, "room03_sideentrance")
+            EnableInteriorProp(interiorID, "room04_roofstairs")
+            EnableInteriorProp(interiorID, "room05_office01")
+            EnableInteriorProp(interiorID, "room06_office02")
+            EnableInteriorProp(interiorID, "room07_office03")
+            EnableInteriorProp(interiorID, "room08_office04")
+            EnableInteriorProp(interiorID, "room09_office05")
+            EnableInteriorProp(interiorID, "room09_office06")
+            EnableInteriorProp(interiorID, "room11_office07")
+            EnableInteriorProp(interiorID, "room12_office08")
+            EnableInteriorProp(interiorID, "room13_mainoffice")
+            EnableInteriorProp(interiorID, "room15_vaultbasement")
+            EnableInteriorProp(interiorID, "room16_vault")
+            EnableInteriorProp(interiorID, "room16_vault_trolleys") -- spawn empty trolleys
+            EnableInteriorProp(interiorID, "heist_preset")
+    RefreshInterior(interiorID)
+    end
+end)

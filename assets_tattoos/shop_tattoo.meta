@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TattooShopItemArray>
+    <TattooShopItems>
+        <!-- Dark Male Tattoo BIG CHEST -->
+        <Item>
+            <id value="10000" />
+            <cost value="0" />
+            <textLabel>NIKEZTATTOOS_TAT_000_M</textLabel>
+            <collection>nikeztattoos_overlays</collection>
+            <preset>nikeztattoos_tat_000_M</preset>
+            <zone>ZONE_TORSO</zone>
+            <eFacing>TATTOO_FRONT</eFacing>
+            <updateGroup>CHEST_FULL</updateGroup>
+            <eFaction>TATTOO_MP_FM</eFaction>
+            <lockHash />
+        </Item>
+        <!-- Color Male Tattoo BIG CHEST -->
+        <Item>
+            <id value="10001" />
+            <cost value="0" />
+            <textLabel>NIKEZTATTOOS_TAT_001_M</textLabel>
+            <collection>nikeztattoos_overlays</collection>
+            <preset>nikeztattoos_tat_001_M</preset>
+            <zone>ZONE_TORSO</zone>
+            <eFacing>TATTOO_FRONT</eFacing>
+            <updateGroup>CHEST_FULL</updateGroup>
+            <eFaction>TATTOO_MP_FM</eFaction>
+            <lockHash />
+        </Item>
+        <!-- DARK LINES Male Tattoo BIG BACK -->
+        <Item>
+            <id value="10002" />
+            <cost value="0" />
+            <textLabel>NIKEZTATTOOS_TAT_002_M</textLabel>
+            <collection>nikeztattoos_overlays</collection>
+            <preset>nikeztattoos_tat_002_M</preset>
+            <zone>ZONE_TORSO</zone>
+            <eFacing>TATTOO_BACK</eFacing>
+            <updateGroup>CHEST_FULL</updateGroup>
+            <eFaction>TATTOO_MP_FM</eFaction>
+            <lockHash />
+        </Item>
+        <!-- DARK FILED Male Tattoo BIG BACK -->
+        <Item>
+            <id value="10003" />
+            <cost value="0" />
+            <textLabel>NIKEZTATTOOS_TAT_003_M</textLabel>
+            <collection>nikeztattoos_overlays</collection>
+            <preset>nikeztattoos_tat_003_M</preset>
+            <zone>ZONE_TORSO</zone>
+            <eFacing>TATTOO_FRONT</eFacing>
+            <updateGroup>CHEST_FULL</updateGroup>
+            <eFaction>TATTOO_MP_FM</eFaction>
+            <lockHash />
+        </Item>
+        <!-- DARK FILED Male Tattoo RIGHT ARM -->
+        <Item>
+            <id value="10004" />
+            <cost value="0" />
+            <textLabel>NIKEZTATTOOS_TAT_004_M</textLabel>
+            <collection>nikeztattoos_overlays</collection>
+            <preset>nikeztattoos_tat_004_M</preset>
+            <zone>ZONE_RIGHT_ARM</zone>
+            <eFacing>TATTOO_FRONT</eFacing>
+            <updateGroup>CHEST_FULL</updateGroup>
+            <eFaction>TATTOO_MP_FM</eFaction>
+            <lockHash />
+        </Item>
+        <!-- DARK LINES Male Tattoo LEFT LEG -->
+        <Item>
+            <id value="10005" />
+            <cost value="0" />
+            <textLabel>NIKEZTATTOOS_TAT_005_M</textLabel>
+            <collection>nikeztattoos_overlays</collection>
+            <preset>nikeztattoos_tat_005_M</preset>
+            <zone>ZONE_LEFT_LEG</zone>
+            <eFacing>TATTOO_FRONT</eFacing>
+            <updateGroup>CHEST_FULL</updateGroup>
+            <eFaction>TATTOO_MP_FM</eFaction>
+            <lockHash />
+        </Item>
+        <!-- DARK LINES Male Tattoo RIGHT LEG -->
+        <Item>
+            <id value="10006" />
+            <cost value="0" />
+            <textLabel>NIKEZTATTOOS_TAT_006_M</textLabel>
+            <collection>nikeztattoos_overlays</collection>
+            <preset>nikeztattoos_tat_006_M</preset>
+            <zone>ZONE_RIGHT_LEG</zone>
+            <eFacing>TATTOO_FRONT</eFacing>
+            <updateGroup>CHEST_FULL</updateGroup>
+            <eFaction>TATTOO_MP_FM</eFaction>
+            <lockHash />
+        </Item>
+        <Item>
+            <id value="10007" />
+            <cost value="0" />
+            <textLabel>NIKEZ_TAT_5STARLEMONS</textLabel>
+            <collection>nikeztattoos_overlays</collection>
+            <preset>nikez_tat_5starlemons</preset>
+            <zone>ZONE_HEAD</zone>
+            <eFacing>TATTOO_FRONT</eFacing>
+            <updateGroup>HEAD</updateGroup>
+            <eFaction>TATTOO_MP_FM</eFaction>
+            <lockHash />
+        </Item>
+        <!-- FEMALE -->
+        <!-- FEMALE -->
+        <!-- FEMALE -->
+        <!-- FEMALE -->
+        <!-- FEMALE -->
+        <!-- FEMALE -->
+        <!-- FEMALE -->
+        <!-- FEMALE -->
+        <!-- FEMALE -->
+        <!-- FEMALE -->
+        <!-- Dark Seaside Tattoo Left Side Female -->
+        <Item>
+            <id value="20001" />
+            <cost value="0" />
+            <textLabel>NIKEZTATTOOS_TAT_000_F</textLabel>
+            <collection>nikeztattoos_overlays</collection>
+            <preset>nikeztattoos_tat_000_F</preset>
+            <zone>ZONE_TORSO</zone>
+            <eFacing>TATTOO_FRONT</eFacing>
+            <updateGroup>CHEST_FULL</updateGroup>
+            <eFaction>TATTOO_MP_FM_F</eFaction>
+            <lockHash />
+        </Item>
+        <!-- Color Seaside Tattoo Left Shoulder -->
+        <Item>
+            <id value="20002" />
+            <cost value="0" />
+            <textLabel>NIKEZTATTOOS_TAT_001_F</textLabel>
+            <collection>nikeztattoos_overlays</collection>
+            <preset>nikeztattoos_tat_001_F</preset>
+            <zone>ZONE_TORSO</zone>
+            <eFacing>TATTOO_FRONT</eFacing>
+            <updateGroup>BACK_UPPER</updateGroup>
+            <eFaction>TATTOO_MP_FM_F</eFaction>
+            <lockHash />
+        </Item>
+        <!-- Dark Seaside Tattoo Left Upper Thigh HUGE-->
+        <Item>
+            <id value="20003" />
+            <cost value="0" />
+            <textLabel>NIKEZTATTOOS_TAT_002_F</textLabel>
+            <collection>nikeztattoos_overlays</collection>
+            <preset>nikeztattoos_tat_002_F</preset>
+            <zone>ZONE_LEFT_LEG</zone>
+            <eFacing>TATTOO_FRONT</eFacing>
+            <updateGroup>LEG_LEFT_UPPER_OUTER</updateGroup>
+            <eFaction>TATTOO_MP_FM_F</eFaction>
+            <lockHash />
+        </Item>
+        <!-- Color Seaside Tattoo Left Calf Small-->
+        <Item>
+            <id value="20003" />
+            <cost value="0" />
+            <textLabel>NIKEZTATTOOS_TAT_003_F</textLabel>
+            <collection>nikeztattoos_overlays</collection>
+            <preset>nikeztattoos_tat_003_F</preset>
+            <zone>ZONE_RIGHT_LEG</zone>
+            <eFacing>TATTOO_FRONT</eFacing>
+            <updateGroup>LEG_RIGHT_UPPER_OUTER</updateGroup>
+            <eFaction>TATTOO_MP_FM_F</eFaction>
+            <lockHash />
+        </Item>
+        <!-- Dark Seaside Tattoo RIGHT ARM -->
+        <Item>
+            <id value="20004" />
+            <cost value="0" />
+            <textLabel>NIKEZTATTOOS_TAT_004_F</textLabel>
+            <collection>nikeztattoos_overlays</collection>
+            <preset>nikeztattoos_tat_004_F</preset>
+            <zone>ZONE_RIGHT_ARM</zone>
+            <eFacing>TATTOO_FRONT</eFacing>
+            <updateGroup>ARM_RIGHT_ELBOW</updateGroup>
+            <eFaction>TATTOO_MP_FM_F</eFaction>
+            <lockHash />
+        </Item>
+        <!-- Nick Simone Tattoos -->
+        <!-- Nick Simone Tattoos -->
+        <!-- Nick Simone Tattoos -->
+        <!-- Nick Simone Tattoos -->
+        <!-- Nick Simone Tattoos -->
+        <Item>
+            <id value="30000" />
+            <cost value="0" />
+            <textLabel>NIKEZ_TAT_HUGINN_L</textLabel>
+            <collection>nikeztattoos_overlays</collection>
+            <preset>nikez_tat_huginn_l</preset>
+            <zone>ZONE_HEAD</zone>
+            <eFacing>TATTOO_FRONT</eFacing>
+            <updateGroup>HEAD</updateGroup>
+            <eFaction>TATTOO_MP_FM</eFaction>
+            <lockHash />
+        </Item>
+        <Item>
+            <id value="30001" />
+            <cost value="0" />
+            <textLabel>NIKEZ_TAT_HUGINN_R</textLabel>
+            <collection>nikeztattoos_overlays</collection>
+            <preset>nikez_tat_huginn_r</preset>
+            <zone>ZONE_TORSO</zone>
+            <eFacing>TATTOO_FRONT</eFacing>
+            <updateGroup>CHEST_FULL</updateGroup>
+            <eFaction>TATTOO_MP_FM</eFaction>
+            <lockHash />
+        </Item>
+        <Item>
+            <id value="30002" />
+            <cost value="0" />
+            <textLabel>NIKEZ_TAT_ATHENA</textLabel>
+            <collection>nikeztattoos_overlays</collection>
+            <preset>nikez_tat_athena</preset>
+            <zone>ZONE_TORSO</zone>
+            <eFacing>TATTOO_FRONT</eFacing>
+            <updateGroup>CHEST_FULL</updateGroup>
+            <eFaction>TATTOO_MP_FM</eFaction>
+            <lockHash />
+        </Item>
+        <Item>
+            <id value="30003" />
+            <cost value="0" />
+            <textLabel>NIKEZ_TAT_ODEN</textLabel>
+            <collection>nikeztattoos_overlays</collection>
+            <preset>nikez_tat_oden</preset>
+            <zone>ZONE_TORSO</zone>
+            <eFacing>TATTOO_FRONT</eFacing>
+            <updateGroup>CHEST_FULL</updateGroup>
+            <eFaction>TATTOO_MP_FM</eFaction>
+            <lockHash />
+        </Item>
+    </TattooShopItems>
+</TattooShopItemArray>

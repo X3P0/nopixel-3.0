@@ -1,0 +1,10 @@
+body {
+  margin: 0px;
+  border: none;
+  overflow: hidden;
+}
+
+#overlay {
+  width: 100vw;
+  height: 100vh;
+}
